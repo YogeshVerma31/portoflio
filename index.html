@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yogesh Verma | Full-Stack Developer (Flutter & Node.js)</title>
   <meta name="description" content="Yogesh Verma – Full-Stack Developer (Flutter & Node.js). Real-time systems, payments, AWS deployments, and AI integrations (OpenAI, Gemini, Grok). Available for fast hiring." />
-  <meta name="theme-color" content="#0b0f1a" />
+  <meta name="theme-color" content="#070A14" />
 
   <style>
     :root{
@@ -20,10 +20,11 @@
       --muted: rgba(233,240,255,.82);
       --muted2: rgba(233,240,255,.62);
 
-      --a:#a78bfa; /* premium violet */
-      --b:#22d3ee; /* premium cyan */
-      --c:#4ade80; /* premium green */
-      --d:#fb923c; /* warm orange */
+      /* ✅ BLUE THEME (updated) */
+      --a:#3b82f6; /* blue */
+      --b:#22d3ee; /* cyan */
+      --c:#60a5fa; /* light blue */
+      --d:#1d4ed8; /* deep blue */
 
       --shadow: 0 22px 60px rgba(0,0,0,.45);
       --shadow2: 0 18px 40px rgba(0,0,0,.35);
@@ -31,7 +32,7 @@
       --radius: 22px;
       --radius2: 16px;
       --container: 1180px;
-      --ring: 0 0 0 3px rgba(34,211,238,.18);
+      --ring: 0 0 0 3px rgba(59,130,246,.22); /* ✅ blue ring */
       --navH: 76px;
 
       --speed: .22s;
@@ -48,7 +49,7 @@
       --muted2: rgba(11,16,32,.62);
       --shadow: 0 22px 60px rgba(10,10,40,.12);
       --shadow2: 0 18px 40px rgba(10,10,40,.10);
-      --ring: 0 0 0 3px rgba(167,139,250,.16);
+      --ring: 0 0 0 3px rgba(59,130,246,.18); /* ✅ blue ring in light */
     }
 
     *{margin:0;padding:0;box-sizing:border-box}
@@ -58,12 +59,12 @@
       color: var(--text);
       overflow-x:hidden;
 
-      /* premium layered background */
+      /* ✅ More blue-focused premium layered background */
       background:
-        radial-gradient(900px 600px at 12% 8%, rgba(167,139,250,.28), transparent 60%),
-        radial-gradient(900px 600px at 88% 18%, rgba(34,211,238,.26), transparent 60%),
-        radial-gradient(900px 650px at 50% 95%, rgba(74,222,128,.18), transparent 62%),
-        radial-gradient(700px 500px at 55% 45%, rgba(251,146,60,.10), transparent 60%),
+        radial-gradient(950px 640px at 12% 8%, rgba(59,130,246,.30), transparent 60%),
+        radial-gradient(950px 640px at 88% 18%, rgba(34,211,238,.26), transparent 60%),
+        radial-gradient(900px 650px at 50% 95%, rgba(96,165,250,.18), transparent 62%),
+        radial-gradient(720px 520px at 55% 45%, rgba(29,78,216,.12), transparent 60%),
         linear-gradient(180deg, var(--bg), var(--bg2));
     }
 
@@ -94,19 +95,19 @@
     }
     [data-theme="light"] body::after{ opacity:.08; mix-blend-mode:multiply; }
 
-    /* aurora blobs */
+    /* aurora blobs (blue shifted) */
     .aurora{
       position:fixed;
       inset:-20vh -20vw;
       z-index:-5;
       pointer-events:none;
       filter: blur(60px);
-      opacity:.45;
+      opacity:.42;
       background:
-        radial-gradient(circle at 20% 25%, rgba(167,139,250,.55), transparent 55%),
+        radial-gradient(circle at 20% 25%, rgba(59,130,246,.55), transparent 55%),
         radial-gradient(circle at 80% 30%, rgba(34,211,238,.55), transparent 55%),
-        radial-gradient(circle at 55% 85%, rgba(74,222,128,.40), transparent 60%),
-        radial-gradient(circle at 60% 55%, rgba(251,146,60,.22), transparent 60%);
+        radial-gradient(circle at 55% 85%, rgba(96,165,250,.42), transparent 60%),
+        radial-gradient(circle at 60% 55%, rgba(29,78,216,.25), transparent 60%);
       animation: drift 16s ease-in-out infinite alternate;
     }
     @keyframes drift{
@@ -196,7 +197,7 @@
       transform: translateY(-1px);
     }
     .nav-links a.active{
-      background: rgba(167,139,250,.16);
+      background: rgba(59,130,246,.16);
       color: var(--text);
       box-shadow: var(--ring);
     }
@@ -242,7 +243,7 @@
       border-top: 1px solid rgba(255,255,255,.08);
     }
     [data-theme="light"] .mobile a{ border-top-color: rgba(0,0,0,.08); }
-    .mobile a:hover{ background: rgba(167,139,250,.10); color: var(--text); }
+    .mobile a:hover{ background: rgba(59,130,246,.10); color: var(--text); }
 
     main{ padding-top: calc(var(--navH) + 22px); }
     section{ padding: 72px 0; }
@@ -300,7 +301,7 @@
       position:absolute; inset:0;
       background:
         radial-gradient(600px 220px at 18% 8%, rgba(34,211,238,.22), transparent 60%),
-        radial-gradient(600px 220px at 82% 18%, rgba(167,139,250,.20), transparent 60%);
+        radial-gradient(600px 220px at 82% 18%, rgba(59,130,246,.20), transparent 60%);
       opacity:.55;
       pointer-events:none;
     }
@@ -315,11 +316,11 @@
     .bento > *{ position:relative; z-index:1; }
     .card > *{ position:relative; z-index:1; }
 
-    /* keep borderGlow effect (slightly refined) */
+    /* keep borderGlow effect */
     .bento.borderGlow::before{
       content:"";
       position:absolute; inset:-2px;
-      background: conic-gradient(from 180deg, rgba(167,139,250,.95), rgba(34,211,238,.92), rgba(74,222,128,.88), rgba(167,139,250,.95));
+      background: conic-gradient(from 180deg, rgba(59,130,246,.95), rgba(34,211,238,.92), rgba(96,165,250,.88), rgba(59,130,246,.95));
       opacity:.35;
       filter: blur(10px);
       animation: spin 8s linear infinite;
@@ -349,7 +350,7 @@
       width: max-content;
       border: 1px solid rgba(255,255,255,.14);
       background:
-        linear-gradient(90deg, rgba(167,139,250,.28), rgba(34,211,238,.22)),
+        linear-gradient(90deg, rgba(59,130,246,.28), rgba(34,211,238,.22)),
         rgba(255,255,255,.02);
       box-shadow:
         0 14px 40px rgba(0,0,0,.35),
@@ -360,13 +361,13 @@
     }
     .pulse-dot{
       width:10px;height:10px;border-radius:99px;
-      background: rgba(74,222,128,.95);
-      box-shadow: 0 0 0 0 rgba(74,222,128,.55);
+      background: rgba(96,165,250,.95); /* ✅ blue pulse */
+      box-shadow: 0 0 0 0 rgba(96,165,250,.55);
       animation: pulse 1.4s ease-out infinite;
     }
     @keyframes pulse{
-      0%{ box-shadow: 0 0 0 0 rgba(74,222,128,.55); }
-      100%{ box-shadow: 0 0 0 14px rgba(74,222,128,0); }
+      0%{ box-shadow: 0 0 0 0 rgba(96,165,250,.55); }
+      100%{ box-shadow: 0 0 0 14px rgba(96,165,250,0); }
     }
 
     .hero-name{
@@ -376,7 +377,7 @@
       text-shadow: 0 12px 40px rgba(0,0,0,.35);
     }
     .gradient-text{
-      background: linear-gradient(90deg, rgba(167,139,250,1), rgba(34,211,238,1), rgba(74,222,128,1));
+      background: linear-gradient(90deg, rgba(59,130,246,1), rgba(34,211,238,1), rgba(96,165,250,1));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -427,11 +428,11 @@
       background: rgba(0,0,0,.03);
       border-color: rgba(0,0,0,.08);
     }
-    .pill:hover{ transform: translateY(-2px); border-color: rgba(167,139,250,.28); background: rgba(167,139,250,.08); }
+    .pill:hover{ transform: translateY(-2px); border-color: rgba(59,130,246,.28); background: rgba(59,130,246,.08); }
     .pill i{
       width:10px; height:10px; border-radius: 99px;
       background: linear-gradient(90deg, var(--b), var(--a));
-      box-shadow: 0 0 0 4px rgba(167,139,250,.10);
+      box-shadow: 0 0 0 4px rgba(59,130,246,.10);
       display:inline-block;
     }
 
@@ -460,7 +461,7 @@
     .btn:focus{ outline:none; box-shadow: var(--ring); }
 
     .btn.primary{
-      background: linear-gradient(90deg, rgba(167,139,250,.30), rgba(34,211,238,.20));
+      background: linear-gradient(90deg, rgba(59,130,246,.32), rgba(34,211,238,.20));
       border-color: rgba(34,211,238,.28);
     }
     .btn.primary::after{
@@ -522,17 +523,22 @@
     }
     .mini a:hover, .mini button:hover{
       transform: translateY(-2px);
-      border-color: rgba(167,139,250,.35);
-      background: rgba(167,139,250,.08);
+      border-color: rgba(59,130,246,.35);
+      background: rgba(59,130,246,.08);
     }
     .mini button:focus{ outline:none; box-shadow: var(--ring); }
 
+    /* ✅ CODE CARD: increased height */
     .code{
       padding: 18px 18px 14px;
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
       font-size: .92rem;
       color: var(--muted2);
       line-height:1.65;
+
+      min-height: 320px;  /* ✅ increased */
+      max-height: 360px;  /* ✅ increased */
+      overflow:auto;
     }
     .code .kw{ color:#fb7185; font-weight:950; }
     .code .fn{ color:#34d399; font-weight:950; }
@@ -546,9 +552,7 @@
     .span-8{ grid-column: span 8; }
     .span-12{ grid-column: span 12; }
 
-    .card{
-      padding: 22px;
-    }
+    .card{ padding: 22px; }
     .card h3{ font-size: 1.2rem; margin-bottom: 8px; letter-spacing:-.01em; }
     .card p{ color: var(--muted2); line-height:1.75; font-weight:650; }
 
@@ -616,7 +620,7 @@
       position:absolute; left:18px; top:18px;
       width:10px; height:10px; border-radius:99px;
       background: linear-gradient(90deg, var(--a), var(--b));
-      box-shadow: 0 0 0 6px rgba(167,139,250,.10);
+      box-shadow: 0 0 0 6px rgba(59,130,246,.10);
     }
     .job h3{ padding-left: 16px; }
     .job .line{ padding-left: 16px; color: var(--muted2); font-weight:950; margin-top:6px; }
@@ -673,8 +677,8 @@
     }
     .copy:hover{
       transform: translateY(-2px);
-      border-color: rgba(74,222,128,.35);
-      background: rgba(74,222,128,.08);
+      border-color: rgba(96,165,250,.35);
+      background: rgba(96,165,250,.08);
     }
 
     footer{ padding: 40px 0 60px; color: var(--muted2); text-align:center; font-weight: 900; }
@@ -778,14 +782,10 @@
               <h1 class="hero-name">
                 Hi, I’m <span class="gradient-text" id="heroName">Yogesh Verma</span>
               </h1>
-              <p class="hero-role" id="heroTitle">
-                Full-Stack Developer (Flutter & Node.js)
-              </p>
+              <p class="hero-role" id="heroTitle">Full-Stack Developer (Flutter & Node.js)</p>
 
               <p class="subtitle" id="heroSummary">
-                I build fast, production-ready Flutter apps + scalable Node.js backends — real-time systems (Socket.IO + Redis + BullMQ),
-                secure payments (Stripe/Razorpay), AWS Docker deployments, and AI integrations (OpenAI API + Gemini API + Grok API + Rekognition).
-                If you want someone who ships quickly and owns features end-to-end, let’s talk.
+                I build premium Flutter apps and scalable Node.js backends that ship fast — real-time (Socket.IO + Redis + BullMQ), secure payments, cloud deployments, and AI integrations (OpenAI • Gemini • Grok + Rekognition). If you want a developer who can start immediately and deliver production features end-to-end — email me.
               </p>
 
               <div class="impact-row" aria-label="Hiring highlights">
@@ -827,7 +827,7 @@
             <div class="bento profile reveal">
               <div class="avatar" aria-hidden="true"></div>
               <h3 id="sideHeadline">Quick contact</h3>
-              <p id="sideText">Agra, India • Available for remote & on-site collaboration.</p>
+              <p id="sideText">Noida, India • Available for remote & on-site collaboration.</p>
               <div class="mini">
                 <a id="miniEmail" href="#">Email</a>
                 <a id="miniGitHub" href="#" target="_blank" rel="noreferrer">GitHub</a>
@@ -836,6 +836,7 @@
               </div>
             </div>
 
+            <!-- ✅ increased height via CSS .code above -->
             <div class="bento code reveal" id="codeCard"></div>
           </div>
         </div>
@@ -994,7 +995,7 @@
         resume: "YogeshVermaResumeUpdated1.pdf",
         email: "jiyogi9758@gmail.com",
         phone: "+91-9758100455",
-        location: "Agra, India"
+        location: "Noida, India"
       },
 
       about: {
